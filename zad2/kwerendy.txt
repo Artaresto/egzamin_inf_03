@@ -1,0 +1,8 @@
+kw1:
+SELECT * FROM pogoda WHERE miasta_id = 1 ORDER BY data_prognozy ASC; 
+kw2:
+SELECT id, data_prognozy FROM pogoda WHERE opady > 30;
+kw3:
+SELECT pogoda.data_prognozy, pogoda.temperatura_noc, miasta.nazwa FROM pogoda, miasta WHERE pogoda.temperatura_noc < 6 AND pogoda.miasta_id = miasta.id; 
+kw4:
+ALTER TABLE miasta ADD wojewodztwo TEXT; 
