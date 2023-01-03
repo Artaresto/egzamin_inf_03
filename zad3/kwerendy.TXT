@@ -1,0 +1,9 @@
+kwerenda 1:
+INSERT INTO ratownicy (nrKaretki, ratownik1, ratownik2, ratownik3)
+VALUES (20,"Adam Nowak", "Jan Kowalski", "Anna Nowakowska");
+kwerenda 2:
+SELECT id, adres, ratownicy_id FROM zgloszenia WHERE dyspozytorzy_id = 4;
+kwerenda 3:
+CREATE USER "adam"@"localhost" IDENTIFIED BY "Adam6&"
+kwerenda 4:
+GRANT CREATE, ALTER, DROP ON ratownicy TO adam

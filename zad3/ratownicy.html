@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zespoły ratownicze</title>
+    <link rel="stylesheet" href="styl3.css">
+</head>
+<body>
+    <div class="b_lewy">
+        <h2>Dodanie zespołu ratowniczego</h2>
+    </div>
+    <div class="b_srodek">
+        <p>Kontakt:<br> 022 222 11 333</p>
+    </div>
+    <div class="b_prawy">
+        <img src="obraz.jpg" alt="ratownicy">
+    </div>
+    <div class="glowny">
+        <h3>Dodaj nowy zespół</h3>
+        <form action="dodanie.php" method="POST">
+            <label>Numer karetki:</label><br>
+            <input type="number" name="numer"><br>
+            <label>Imię i nazwisko pierwszego ratownika:</label><br>
+            <input type="text" name="pierw"><br>
+            <label>Imię i nazwisko drugiego ratownika:</label><br>
+            <input type="text" name="drug"><br>
+            <label>Imię i nazwisko trzeciego ratownika:</label><br>
+            <input type="text" name="trzec"><br>
+            <button type="reset">Czyść</button>
+            <button type="submit">Dodaj</button>
+        </form>
+    </div>
+    <div class="s_lewy">
+        <a href="kwerendy.txt" download="kwerendy.txt">Zobacz kwerendy</a>
+    </div>
+    <div class="s_srodek">
+        <h5>Przypominamy numery alarmowe</h5>
+        <ol>
+            <li>112</li>
+            <li>999</li>
+            <li></li>
+        </ol>
+    </div>
+    <div class="s_prawy">
+        <p>Autor<br> 
+            Patryk Pośnik </p>
+    </div>
+</body>
+</html>

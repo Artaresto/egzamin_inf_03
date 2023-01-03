@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    font-family: Arial;
+}
+.b_lewy, .b_srodek, .b_prawy,
+.s_lewy, .s_srodek, .s_prawy{
+    background-color: saddlebrown;
+    color: #FFF;
+    height: 100px;
+    float: left;
+}
+.b_lewy, .s_lewy{
+    width: 55%;
+    font-size: 120%;
+}
+.s_srodek, .b_srodek{
+    width: 25%;
+}
+.b_prawy, .s_prawy{
+    width: 20%;
+    text-align: right;
+}
+.glowny{
+    background-color: snow;
+    padding: 70px;
+    clear: both;
+}
+a{
+    border: 2px dotted saddlebrown;
+    background-color: snow;
+    color: saddlebrown;
+    padding: 20px;
+    line-height: 100px;
+}
+ol{
+    list-style-type: lower-latin;
+}
