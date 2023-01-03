@@ -51,7 +51,7 @@
         <img src="obraz.jpg" alt="Polska, Wrocław">
     </div>
     <div class = "prawy">
-        <a href="kwerendy.txt">Pobierz kwerendy</a>
+        <a href ="kwerendy.txt" download = "kwerendy.txt">Pobierz kwerendy</a>
     </div>
     <div class = "stopka">
         <p>Stronę wykonał: Patryk Pośnik</p>
