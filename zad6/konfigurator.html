@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style w JavaScript</title>
+    <link rel="stylesheet" href="style6.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <section class="lewy" id="lewy">
+        <h1>Konfigurator Stylu</h1>
+        <p>Podaj kolor tła</p>
+            <button class="button indi" onclick="indi()" id="indi">Indigo</button>
+            <button class="button steel" onclick="steel()" id="steel">SteelBlue</button>
+            <button class="button oliv" onclick="oliv()" id="oliv">Olive</button>
+        <p>Podaj kolor czcionki</p>
+        <select name="lista" id="lista" onchange="kolor_czcionki()">
+            <option value="white">White</option>
+            <option value="Tan">Tan</option>
+            <option value="Bisque">Bisque</option>
+            <option value="Plum">Plum</option>
+        </select>
+        <p>Podaj rozmiar czcionki w procentach, np.200%</p>
+        <input type="text" name="proc" id="proc" value="100%" onchange="rozmiar()">
+        <p>Czy rysunek ma mieć ramkę</p>
+        <input type="checkbox" name="ramka" id="ramka" checked onchange="border()">
+        <label for="ramka">Rysuj ramkę</label>
+        <p>Jaki jest tryb punktora listy?</p>
+        <label><input type="radio" name="punktor" id="punktor" checked onchange="punktor('dysk')" name='punktor'>dysk</label>
+        <label><input type="radio" name="punktor" id="punktor" onchange="punktor('kwadrat')" name='punktor'>kwadrat</label>
+        <label><input type="radio" name="punktor" id="punktor" onchange="punktor('okrąg')" name='punktor'>okrąg</label>
+    </section>
+    <section class="prawy" id="prawy">
+        <img src="gibraltar.jpg" alt="półwysep Gibraltar" id="img">
+        <ul id="lista1">
+            <li>element 1</li>
+            <li>element 2</li>
+            <li>element 3</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+    </section>
+    <footer>
+        Autor: Patryk Pośnik
+    </footer>
+</body>
+</html>
