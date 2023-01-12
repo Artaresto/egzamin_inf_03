@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="styl7.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <header>
+        <h2>Galeria miejsc ciekawych</h2>
+    </header>
+    <main>
+        <img src="lanzarotte.jpg" alt="galeria" id="zdj">
+    </main>
+    <section class="lewy" id="lewy">
+        <h3>Przeglądaj zdjęcia</h3>
+        <img src="lanzarotte.jpg" alt="lanzarotte" onclick="zdjecie('lanza')">
+        <img src="pekin.jpg" alt="pekin" onclick="zdjecie('chiny')">
+        <img src="serengeti.jpg" alt="serengeti" onclick="zdjecie('seren')">
+        <img src="wenecja.jpg" alt="wenecja" onclick="zdjecie('italia')">
+        <img src="tajlandia.jpg" alt="tajlandia" onclick="zdjecie('indioch')">
+    </section>
+    <section class="prawy" id="prawy">
+        <h3>obrazy w naszej galerii</h3>
+        <table>
+            <tr>
+                <td>Europa</td>
+                <td>Azja</td>
+                <td>Afryka</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+        </table>
+        <p>Polub nas</p>
+        <img src="icon-off.png" onclick="iconic()" id="icon">
+        <script>const icon = document.querySelector("#icon");
+
+            function iconic(){
+                if  (icon.getAttribute("src") == "icon-off.png") {
+                    icon.setAttribute("src", "icon-on.png");
+                }
+                else if (icon.getAttribute("src") == "icon-on.png") {
+                    icon.setAttribute("src", "icon-off.png");
+                }
+            }</script>
+        <a href="https://pixabay.com" target="_blank" >Odkryj więcej zdjęć</a>
+    </section>
+    <footer>
+        Autor: Patryk Pośnik
+    </footer>
+</body>
+</html>
