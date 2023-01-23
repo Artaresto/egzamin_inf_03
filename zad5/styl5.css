@@ -40,13 +40,13 @@ body{
     text-align: center;
     border: solid 1px #003d33;
 }
-.wizyt > button{
+.wizyt button{
     background-color: #003d33;
     color: #FFF;
     width: 100%;
     height: 30px;
     border: none;
 }
-.wizyt > button:hover{
+.wizyt button:hover{
     background-color: #004c40;
 }
